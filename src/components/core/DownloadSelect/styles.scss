@@ -1,0 +1,84 @@
+.mcmc-report {
+  &__download {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &__title {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &__select {
+      display: inline-block;
+      position: relative;
+
+      & button {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid var(--gray-medium);
+        border-radius: 8px;
+        padding: 7px;
+        width: 68px;
+        background-color: var(--outer-space);
+      
+        &:has(~ .mcmc-report__download__dropdown #d-pdf:checked) {
+          & p::after {
+            content: "PDF";
+          }
+        }
+      
+        &:has(~ .mcmc-report__download__dropdown #d-csv:checked) {
+          & p::after {
+            content: "CSV";
+          }
+        }
+      }
+      
+      & label {
+        display: block;
+        padding: 8px;
+        cursor: pointer;
+      
+        &:hover {
+          background-color: var(--gray-dark);
+        }
+      }
+      
+      & input {
+        display: none;
+      }
+    }
+
+    &__dropdown {
+      display: none;
+      position: absolute;
+      top: 34px;
+      width: 68px;
+      border: 1px solid var(--gray-medium);
+      border-radius: 8px;
+      padding: 5px;
+      background-color: var(--outer-space);
+      z-index: 1;
+    
+      &.show {
+        display: block;
+      }
+    }
+    
+    &__selected, label {
+      font-family: "Lato";
+      font-size: 14px;
+      line-height: 16px;
+    }
+    
+    &__selected {
+      &::after {
+        content: "Pick";
+        display: block;
+      }
+    }
+  }
+}

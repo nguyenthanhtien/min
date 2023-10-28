@@ -1,0 +1,32 @@
+.mcmc-auth-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  &__logo-area {
+    text-align: center;
+  }
+
+  & .mcmc-logo {
+    margin: 20px auto;
+  }
+
+  & .mcmc-desc {
+    max-width: 343px;
+  }
+
+  & hr {
+    margin: 0 72px;
+    border: 0.5px solid var(--white);
+    height: 258px;
+  }
+
+  &__option-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 380px;
+  }
+}

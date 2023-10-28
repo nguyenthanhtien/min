@@ -1,0 +1,22 @@
+.mcmc-auth-btn {
+  display: block;
+  padding: 27px 18px 26px 36px;
+  width: 212px;
+  height: 77px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  background-image: url(@/assets/images/auth-btn-default.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    color: var(--blue-cyan);
+    background-image: url(@/assets/images/auth-btn-hover.png);
+  }
+
+  &:disabled {
+    color: var(--gray-spanish);
+    background-image: url(@/assets/images/auth-btn-disabled.png);
+  }
+}

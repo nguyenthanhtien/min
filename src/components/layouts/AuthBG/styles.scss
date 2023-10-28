@@ -1,0 +1,41 @@
+.mcmc-bg {
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  background-image: url(@/assets/images/Auth-Menu-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  & * {
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--white);
+  }
+  
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 404px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+  }
+
+  &::before {
+    top: 97px;
+    background-image: url(@/assets/icons/main-menu-top.svg);
+  }
+
+  &::after {
+    bottom: 67px;
+    background-image: url(@/assets/icons/main-menu-bottom.svg);
+    background-position: bottom;
+  }
+}
+
+.mcmc-content {
+  margin: 0 auto;
+  padding: 97px 0 67px;
+  width: 1257px;
+  z-index: 1;
+}

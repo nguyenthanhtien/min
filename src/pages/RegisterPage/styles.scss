@@ -1,0 +1,62 @@
+.mcmc-register {
+  & .mcmc-back-arrow {
+    top: 130px;
+    left: 208px;
+  }
+
+  &__logo-area {
+    text-align: center;
+
+    & .mcmc-desc {
+      margin-top: 16px;
+      font-size: 22px;
+    }
+  }
+
+  &__form-area {
+    margin-top: 20px;
+    max-width: 851px;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 31px;
+  }
+
+  &__gender {
+    &__title {
+      margin-bottom: 24px;
+      font-size: 18px;
+    }
+  }
+
+  & .mcmc-checkbox {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  &__option-area {
+    margin-top: 16px;
+    text-align: center;
+
+    & .mcmc-auth-btn {
+      display: inline-block;
+      margin-bottom: 16px;
+    }
+  }
+
+  & .mcmc-quest {
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  & .terms {
+    display: flex;
+    justify-content: center;
+
+    & .mcmc-checkbox {
+      margin-right: 8px;
+    }
+  }
+}

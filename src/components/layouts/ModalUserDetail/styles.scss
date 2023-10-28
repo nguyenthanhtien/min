@@ -1,0 +1,140 @@
+.user-detail {
+  padding-top: 40px;
+
+  & .mcmc-profile-pic {
+    margin: auto;
+    width: 153px;
+    height: 153px;
+
+    & svg {
+      margin: auto;
+      width: 128px;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+
+    &__right {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+
+  &__medals {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 9px;
+  }
+
+  &__medal {
+    text-align: center;
+
+    &__img {
+      height: 32px;
+    }
+
+    & img {
+      margin: auto;
+
+      &[aria-disabled="true"] {
+        filter: grayscale(0.5);
+        mix-blend-mode: luminosity;
+      }
+    }
+
+    &__count {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+  &__info {
+    &:has(div) {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    &__name, &__value {
+      display: inline-block;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    
+    &__name {
+      margin-right: 16px;
+      min-width: 123px;
+      font-weight: 300;
+    }
+
+    &__value {
+      font-weight: 500;
+      letter-spacing: 0.9px;
+    }
+
+    &__action {
+      & .user-detail__info__value {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        cursor: pointer;
+      }
+
+      & input {
+        display: none;
+
+        &:checked {
+          & + label.user-detail__info__value {
+            opacity: 0.5;
+          }
+
+          & ~ .user-detail__roles {
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+
+  &__roles {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    margin-top: 6px;
+    visibility: hidden;
+
+    & .mcmc-checkbox {
+      &__name {
+        font-weight: 400;
+      }
+
+      &__input {
+        &:checked {
+          & + #icon {
+            background-image: url("@/assets/icons/checked-3.svg");
+          }
+
+          &:disabled + #icon {
+            background-image: url("@/assets/icons/checked-2.svg");
+          }
+        }
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 10px;
+    padding: 24px 0 31px;
+  }
+}

@@ -1,0 +1,40 @@
+.mcmc-all-user {
+  & .mcmc-table {
+    & .mcmc-thead {
+      &__cell {
+        &:last-child {
+          padding-right: 11px;
+
+          & div {
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
+
+    & .mcmc-tbody {
+      &__cell {
+        &:first-child p {
+          width: 30px;
+          text-align: center;
+        }
+
+        &:last-child {
+          padding: 11.25px 75px 6.5px 8px;
+          text-align: right;
+        }
+      }
+    }
+
+    & .mcmc-switch {
+      justify-content: flex-end;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 34px;
+  }
+}

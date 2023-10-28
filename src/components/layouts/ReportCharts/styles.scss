@@ -1,0 +1,95 @@
+.mcmc-report {
+  &__chart-content {
+    & .mcmc-trend-box {
+      flex: 1;
+    }
+  }
+
+  &__gray-box {
+    flex: 1;
+    border-radius: 12px;
+    padding: 16px 0;
+    background-color: var(--black-olive);
+  }
+
+  & .mcmc-progress-pie {
+    margin: 0 auto;
+  }
+
+  &__recent {
+    padding: 14px 13px 14px 30px;
+
+    & img {
+      margin-bottom: 3px;
+      width: 9px;
+      height: 9.37px;
+    }
+
+    &__title {
+      margin-bottom: 4px;
+      font-size: 18px;
+      line-height: 21.6px;
+      color: var(--silver-chalice);
+    }
+
+    &__total {
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 54px;
+    }
+
+    &__percentage {
+      font-size: 12px;
+      line-height: 14.4px;
+      color: var(--silver-foil);
+    }
+
+    &__list {
+      max-height: 100px;
+      overflow-y: auto;
+    }
+
+    &__item {
+      & * {
+        font-size: 18px;
+        line-height: 21.6px;
+      }
+
+      & p {
+        display: inline-block;
+      }
+    }
+  }
+
+  &__graph {
+    border-radius: 6px;
+    padding: 25px 25px 31px 9px;
+    height: 413px;
+    background-color: var(--raisin-black);
+
+    & .mcmc-linechart {
+      max-height: 316px;
+    }
+
+    & .recharts-xAxis {
+      & tspan {
+        font-size: 10px;
+        line-height: 12.1px;
+      }
+
+      & .recharts-cartesian-axis-tick:first-child {
+        & tspan {
+          font-size: 12px;
+          line-height: 14.52px;
+        }
+      }
+    }
+
+    & .recharts-yAxis {
+      & tspan {
+        font-size: 12px;
+        line-height: 14.52px;
+      }
+    }
+  }
+}

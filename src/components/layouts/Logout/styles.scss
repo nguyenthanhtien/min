@@ -1,0 +1,21 @@
+.mcmc-logout {
+  display: flex;
+  gap: 82px;
+  padding-top: 59px;
+
+  &__content {
+    margin-top: 8px;
+  }
+
+  &__question {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  & .mcmc-auth-btn {
+    display: inline-block;
+    margin-right: 11px;
+  }
+}

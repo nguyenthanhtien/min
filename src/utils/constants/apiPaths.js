@@ -1,0 +1,14 @@
+export const REGISTER = "register";
+export const LOGIN = "login";
+export const RESET_PASSWORD = "reset-password";
+export const CONFIRM_RESET_PASSWORD = "confirm-reset-password";
+export const PROFILE = "info";
+export const ROLES = "roles";
+export const USER_LIST = "User/get-all";
+export const USERS_BY_ROLE = "User/get-users-by-role";
+export const FIND_USERS = "User/find-users";
+export const USER_DETAIL = "User/find-user/{username}";
+export const UPDATE_USER = "User/Update-user";
+export const DASHBOARD_USER_REPORT = "dashboard/user-report";
+export const DASHBOARD_CHART_REPORT = "dashboard/chart-report";
+export const SESSION_LIST = "dropdown/get-session";

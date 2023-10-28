@@ -1,0 +1,47 @@
+.mcmc-trend-box {
+  border: 3px solid rgba(97, 97, 97, 0.8);
+  border-radius: 10px;
+  padding: 30px 10px;
+  text-align: center;
+
+  &__title, &__percent__visualize, &__unit {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+  
+  &__title {
+    color: var(--silver-chalice);
+  }
+
+  &__total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin-top: 4px;
+
+    &__count {
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 54px;
+    }
+
+    &__unit {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19.2px;
+    }
+  }
+
+  &__percent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 4px;
+
+    & svg {
+      margin-bottom: 3px;
+    }
+  }
+}

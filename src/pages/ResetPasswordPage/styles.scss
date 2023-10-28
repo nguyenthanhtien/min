@@ -1,0 +1,42 @@
+.mcmc-rp {
+  padding-top: 56px;
+  height: 100%;
+
+  & .mcmc-back-arrow {
+    top: 127px;
+    left: 226px;
+  }
+
+  &__logo-area {
+    text-align: center;
+
+    & .mcmc-desc {
+      font-size: 22px;
+
+      & span {
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__form-area {
+    margin-top: 24px;
+
+    & .mcmc-i-box {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__option-area {
+    text-align: center;
+
+    & .mcmc-auth-btn {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    & .mcmc-quest {
+      margin-top: 10px;
+    }
+  }
+}

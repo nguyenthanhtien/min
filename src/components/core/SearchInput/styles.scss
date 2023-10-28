@@ -1,0 +1,25 @@
+.mcmc-search {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid var(--gray-medium);
+  border-radius: 8px;
+  padding: 7px;
+  width: 320px;
+  background-color: var(--white);
+
+  &__input {
+    flex: 1;
+    font-size: 15px;
+    line-height: 16px;
+    color: var(--black);
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: var(--gray-dark);
+    }
+  }
+}

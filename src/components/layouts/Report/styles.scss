@@ -1,0 +1,88 @@
+.mcmc-report {
+  padding-top: 4px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  &__search {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  &__search-by {
+    flex: 1;
+  }
+
+  &__table-content {
+    & .mcmc-table {
+      & .mcmc-thead {
+        &__cell {
+          &:last-child {
+            padding-right: 24px;
+          }
+        }
+      }
+  
+      & .mcmc-tbody {
+        &__cell {
+          &:first-child p {
+            width: 30px;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    & .mcmc-achievements {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+
+      & #medal-1 {
+        width: 28px;
+        height: 26px;
+      }
+
+      & #medal-2 {
+        width: 33px;
+        height: 24px;
+      }
+
+      & #medal-3 {
+        width: 41px;
+        height: 23px;
+      }
+    }
+  }
+
+  &__pagination-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+  }
+
+  &__pagination-statistics {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+
+    & b {
+      font-weight: 700;
+    }
+  }
+
+  &__section {
+    margin-top: 24px;
+  }
+}

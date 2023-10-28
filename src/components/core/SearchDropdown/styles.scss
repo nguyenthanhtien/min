@@ -1,0 +1,91 @@
+.mcmc-s-dropdown {
+  position: relative;
+
+  & > input {
+    display: none;
+
+    &:checked {
+      & ~ .mcmc-s-dropdown__dropdown {
+        display: block;
+      }
+    }
+  }
+
+  &__display-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--gray-medium);
+    border-radius: 8px;
+    padding: 7px;
+    background-color: var(--white);
+
+    & svg path {
+      fill: var(--black);
+    }
+  }
+
+  &__display-name {
+    min-height: 16px;
+    font-family: "Lato";
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--black);
+    user-select: none;
+  }
+
+  &__dropdown {
+    display: none;
+    position: absolute;
+    top: 34px;
+    border-radius: 8px;
+    padding: 10px 12px;
+    width: 100%;
+    background-color: var(--white);
+  }
+
+  &__search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid var(--gray-medium);
+    padding: 13px 7px 12px;
+
+    & input {
+      width: 100%;
+      font-size: 16px;
+      line-height: 16px;
+      color: var(--gray-dark);
+      outline: none;
+    }
+  }
+
+  &__list {
+    max-height: 288px;
+    overflow-y: auto;
+
+    & .mcmc-checkbox {
+      padding: 12px;
+
+      &:has(> label input:checked) {
+        background-color: var(--gray-light);
+      }
+
+      &__name {
+        font-family: "Josefin Sans";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--black);
+        user-select: none;
+      }
+
+      &__input:checked {
+        & + #icon {
+          background-image: url("@/assets/icons/checked-2.svg");
+        }
+      }
+    }
+  }
+}

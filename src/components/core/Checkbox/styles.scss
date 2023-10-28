@@ -1,0 +1,30 @@
+.mcmc-checkbox {
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__input {
+    display: none;
+
+    &:checked {
+      & + #icon {
+        background-image: url("@/assets/icons/checked-1.svg");
+      }
+    }
+  }
+
+  &__icon {
+    min-width: 24px;
+    height: 24px;
+    background-image: url("@/assets/icons/uncheck.svg");
+  }
+
+  &__name {
+    font-family: 'Josefin Slab', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

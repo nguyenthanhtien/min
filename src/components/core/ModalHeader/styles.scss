@@ -1,0 +1,20 @@
+.mcmc-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--gray-medium);
+  padding: 11px 11px 12px 11px;
+  height: 56px;
+  background-color: var(--blue-cyan);
+
+  &__title, &__sub-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--black);
+  }
+
+  &__sub-title {
+    font-weight: 500;
+  }
+}

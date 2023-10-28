@@ -1,0 +1,92 @@
+.mcmc-report {
+  &__date-select {
+    z-index: 1;
+
+    &__select {
+      display: inline-block;
+      position: relative;
+
+      & button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid var(--gray-medium);
+        border-radius: 8px;
+        padding: 7px;
+        width: 130px;
+        background-color: var(--white);
+
+        & svg path {
+          fill: var(--black);
+        }
+      
+        &:has(~ .mcmc-report__date-select__dropdown #d-1y:checked) {
+          & p::after {
+            content: "1 year";
+          }
+        }
+      
+        &:has(~ .mcmc-report__date-select__dropdown #d-6m:checked) {
+          & p::after {
+            content: "6 months";
+          }
+        }
+
+        &:has(~ .mcmc-report__date-select__dropdown #d-3m:checked) {
+          & p::after {
+            content: "3 months";
+          }
+        }
+
+        &:has(~ .mcmc-report__date-select__dropdown #d-1m:checked) {
+          & p::after {
+            content: "1 month";
+          }
+        }
+      }
+      
+      & label {
+        display: block;
+        padding: 8px;
+        cursor: pointer;
+      
+        &:hover {
+          background-color: var(--gray-dark);
+        }
+      }
+      
+      & input {
+        display: none;
+      }
+    }
+
+    &__dropdown {
+      display: none;
+      position: absolute;
+      top: 34px;
+      width: 130px;
+      border-radius: 8px;
+      padding: 6px;
+      background-color: var(--white);
+      z-index: 1;
+    
+      &.show {
+        display: block;
+      }
+    }
+    
+    &__selected, label {
+      font-size: 16px;
+      line-height: 16px;
+      color: var(--black);
+    }
+    
+    &__selected {
+      &::after {
+        content: "1 year";
+        display: block;
+      }
+    }
+  }
+}

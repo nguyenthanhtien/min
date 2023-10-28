@@ -1,0 +1,47 @@
+.mcmc-i-box {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 10px;
+  }
+
+  &__label {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &__message {
+    font-size: 12px;
+    font-style: italic;
+    line-height: 14px;
+    color: var(--blue-cyan);
+  }
+
+  &__input {
+    border: 1px solid var(--gray-medium);
+    border-radius: 12px;
+    padding: 15px;
+    width: 410px;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--black);
+
+    &:focus {
+      border: 4px solid var(--blue-cyan);
+      padding: 12px;
+      background-color: var(--gray-light);
+      outline: none;
+    }
+
+    &::placeholder {
+      font-family: 'Lato', sans-serif;
+      color: var(--gray-dark);
+    }
+
+    &:disabled {
+      color: var(--gray-dark);
+      background-color: var(--gray-medium);
+    }
+  }
+}

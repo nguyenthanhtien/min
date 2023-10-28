@@ -1,0 +1,57 @@
+.mcmc-fp {
+  padding-top: 56px;
+  height: 100%;
+
+  &.sent {
+    padding: 0;
+    height: auto;
+
+    & .mcmc-auth-btn {
+      margin: 41px auto 0;
+    }
+
+    & .mcmc-welcome {
+      margin: 24px 0 21px;
+    }
+  }
+
+  & .mcmc-welcome {
+    margin: 27px 0;
+  }
+
+  & .mcmc-desc {
+    max-width: 420px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  & .mcmc-back-arrow {
+    top: 127px;
+    left: 226px;
+  }
+
+  &__logo-area {
+    text-align: center;
+  }
+
+  &__form-area {
+    margin-top: 24px;
+
+    & .mcmc-i-box {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__option-area {
+    text-align: center;
+
+    & .mcmc-auth-btn {
+      display: inline-block;
+      margin: 17px 0 27px;
+    }
+
+    & .mcmc-quest {
+      margin-top: 10px;
+    }
+  }
+}
