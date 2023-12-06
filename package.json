@@ -17,7 +17,7 @@
     "@azure/msal-react": "^2.0.2",
     "@readyplayerme/rpm-react-sdk": "^0.1.4",
     "@reduxjs/toolkit": "^1.9.5",
-    "axios": "^1.4.0",
+    "axios": "^1.6.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "localforage": "^1.10.0",
     "lodash-es": "^4.17.21",
